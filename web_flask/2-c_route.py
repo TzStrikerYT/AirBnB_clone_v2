@@ -21,8 +21,8 @@ def hello_hbnb():
 @app.route('/c/<text>')
 def content(text):
     """ Return HBNB """
-    content = str(text).replace(" ", " ")
-    return "C {:s}".format(escape(text))
+    content = str(text).replace("_", " ")
+    return "C {:s}".format(text)
 
 if __name__ == "__main__":
     app.run("0.0.0.0", 5000)
