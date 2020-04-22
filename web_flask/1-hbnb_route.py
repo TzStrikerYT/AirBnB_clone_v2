@@ -11,6 +11,7 @@ def hello_flask():
     """ Return Hello HBNB """
     return "Hello HBNB!"
 
+
 @app.route('/hbnb')
 def hello_hbnb():
     """ Return HBNB """
