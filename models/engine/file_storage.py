@@ -64,10 +64,6 @@ class FileStorage:
         except FileNotFoundError:
             pass
 
-    def close(self):
-        """ specific storage """
-        slef.reload()
-
     def delete(self, obj=None):
         """ Delete obj if its inside """
         if not obj:
@@ -78,3 +74,7 @@ class FileStorage:
         if k in self.__objects:
             del self.__objects[k]
             self.save()
+
+    def close(self):
+        """ specific storage """
+        slef.reload()
