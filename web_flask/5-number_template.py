@@ -36,6 +36,7 @@ def is_a_number(n):
     """ Return number only is a number """
     return "{} is a number".format(n)
 
+
 @app.route('/number_template/<int:n>')
 def tmpl_number(n):
     """ Return template of number only is a number """
