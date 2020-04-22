@@ -22,7 +22,7 @@ def hello_hbnb():
 def content(text):
     """ Return HBNB """
     content = str(text).replace(" ", " ")
-    return "C {:s}".format(text)
+    return "C {:s}".format(escape(text))
 
 if __name__ == "__main__":
     app.run("0.0.0.0", 5000)
