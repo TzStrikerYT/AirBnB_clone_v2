@@ -18,7 +18,7 @@ def state(id):
     """ List of states """
     state = states = None
     if not id:
-        states = list(storage.all(State).values())
+        states = list(models.storage.all(State).values())
     else:
         states = models.storage.all(State)
         key = "State.{}".format(id)
