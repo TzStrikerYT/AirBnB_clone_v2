@@ -28,6 +28,7 @@ def state(id):
         states = []
     return render_template('9-states.html', **locals())
 
+
 if __name__ == '__main__':
     models.storage.reload()
     app.run("0.0.0.0", 5000)
